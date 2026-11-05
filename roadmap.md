@@ -1,0 +1,3 @@
+- [ ] Build the Spanish vacation-home page using the supplied logo and approved copy.
+- [ ] Store reservation inquiries securely and verify one complete submission.
+- [ ] Validate the page, design rules and guest/rate facts; commit the finished work.
