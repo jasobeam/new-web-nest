@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application structure
+- Keep the vacation-home website as a single Spanish home page with in-page section links; reservation inquiries are validated server-side and stored in Lovable Cloud because the owner needs to receive requests.

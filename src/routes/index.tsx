@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import {
@@ -107,7 +107,7 @@ function HomePage() {
     setFormErrors((previous) => ({ ...previous, [field]: "" }));
   };
 
-  async function handleReservationSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleReservationSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setFormStatus("idle");
 
