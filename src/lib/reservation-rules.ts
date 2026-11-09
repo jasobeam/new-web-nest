@@ -5,8 +5,8 @@ export const WEEKEND_NIGHTLY_RATE_USD = 170;
 export const MAX_GUESTS = 8;
 
 export function nightlyRateForDate(date: string): number {
-  const [year, month, day] = date.split("-").map(Number);
-  const weekday = new Date(Date.UTC(year, month - 1, day)).getUTCDay();
+  const timestamp = Date.parse(`${date}T00:00:00Z`);
+  const weekday = Number.isNaN(timestamp) ? 0 : new Date(timestamp).getUTCDay();
   return weekday === 5 || weekday === 6
     ? WEEKEND_NIGHTLY_RATE_USD
     : WEEKDAY_NIGHTLY_RATE_USD;
