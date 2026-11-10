@@ -206,14 +206,14 @@ html {
   font-family: var(--font-body);
   font-size: 0.65rem;
   font-weight: 600;
-  letter-spacing: 0.09em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: clamp(1.1rem, 2.6vw, 2.25rem);
+  gap: 1.5rem;
 }
 
 .desktop-nav > a:not(.nav-booking),
@@ -294,7 +294,7 @@ html {
   color: var(--primary);
   font-size: 0.71rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -322,7 +322,7 @@ html {
 .hero h1 {
   max-width: 720px;
   margin: 1.45rem 0 0.8rem;
-  font-size: clamp(3.8rem, 7.7vw, 7rem);
+  font-size: 6.4rem;
   line-height: 0.99;
 }
 
@@ -395,7 +395,7 @@ html {
   right: 2rem;
   color: color-mix(in oklab, var(--primary-foreground) 88%, transparent);
   font-size: 0.66rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
   writing-mode: vertical-rl;
 }
@@ -410,7 +410,7 @@ html {
 .intro-heading h2 {
   max-width: 490px;
   margin: 1rem 0 0;
-  font-size: clamp(2.45rem, 4.4vw, 4.05rem);
+  font-size: 4.05rem;
   line-height: 1.09;
 }
 
@@ -520,7 +520,7 @@ html {
 
 .section-heading h2 {
   margin: 0.9rem 0 0;
-  font-size: clamp(2.6rem, 4.4vw, 4rem);
+  font-size: 4rem;
   line-height: 1.1;
 }
 
@@ -678,7 +678,7 @@ html {
 
 .coast-copy h2 {
   margin: 1rem 0 0.8rem;
-  font-size: clamp(2.5rem, 4.1vw, 3.65rem);
+  font-size: 3.65rem;
   line-height: 1.08;
 }
 
@@ -752,7 +752,7 @@ html {
 
 .rates-intro h2 {
   margin: 1rem 0 0;
-  font-size: clamp(2.7rem, 4.5vw, 4.2rem);
+  font-size: 4.2rem;
   line-height: 1.05;
 }
 
@@ -888,7 +888,7 @@ html {
 
 .rules-title h2 {
   margin: 0.9rem 0 0;
-  font-size: clamp(2.25rem, 3.4vw, 3.3rem);
+  font-size: 3.3rem;
   line-height: 1.1;
 }
 
@@ -941,7 +941,7 @@ html {
 .reservation-copy h2 {
   max-width: 480px;
   margin: 1rem 0 0;
-  font-size: clamp(2.8rem, 4.3vw, 4.2rem);
+  font-size: 4.2rem;
   line-height: 1.05;
 }
 
@@ -988,7 +988,7 @@ html {
 }
 
 .reservation-form {
-  padding: clamp(1.25rem, 3vw, 2.3rem);
+  padding: 2rem;
   background: var(--background);
   color: var(--foreground);
 }
@@ -1257,6 +1257,22 @@ html {
     min-height: min(680px, calc(100svh - 72px));
   }
 
+  .hero h1 { font-size: 5rem; }
+  .intro-heading h2 { font-size: 3.3rem; }
+  .section-heading h2 { font-size: 3.3rem; }
+  .coast-copy h2 { font-size: 3rem; }
+  .rates-intro h2 { font-size: 3.35rem; }
+  .rules-title h2 { font-size: 2.9rem; }
+  .reservation-copy h2 { font-size: 3.4rem; }
+
+  .hero h1 { font-size: 5rem; }
+  .intro-heading h2 { font-size: 3.3rem; }
+  .section-heading h2 { font-size: 3.3rem; }
+  .coast-copy h2 { font-size: 3rem; }
+  .rates-intro h2 { font-size: 3.35rem; }
+  .rules-title h2 { font-size: 2.9rem; }
+  .reservation-copy h2 { font-size: 3.4rem; }
+
   .hero-content {
     width: min(100% - 2.25rem, 700px);
     padding-block: 5rem 6.5rem;
@@ -1350,7 +1366,7 @@ html {
 
   .hero h1 {
     margin-top: 1.2rem;
-    font-size: clamp(3.3rem, 16vw, 5rem);
+    font-size: 3.65rem;
   }
 
   .hero-content > p {
